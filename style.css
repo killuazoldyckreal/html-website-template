@@ -79,8 +79,20 @@ header ul li a {
 
 .project-button {
     border-radius: 5px;
-    bottom: 10px;
+    bottom: 30px;
     position: absolute;
+}
+
+.project-box {
+    flex: 0 0 calc(33.33% - 40px);
+    background-color: #3d3d3d;
+    padding: 20px;
+	height: 220px;
+	width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 header ul li a:hover{
@@ -189,16 +201,7 @@ header ul li a:hover{
 }
 
 /* Styles for project boxes */
-.project-box {
-    flex: 0 0 calc(33.33% - 40px);
-    background-color: #3d3d3d;
-    padding: 20px;
-	height: 190px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
+
 .project-box h2, .project-box p {
     background-color: #3d3d3d;
     padding: 5px;
