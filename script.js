@@ -21,4 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.menu-icon').addEventListener('click', function() {
     document.querySelector('.nav-links').classList.toggle('active');
   });
+  
+  const projectLinks = document.querySelectorAll('.project-button');
+
+  projectLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const url = link.getAttribute('href');
+      window.open(url, '_blank');
+    });
+  });
 });
